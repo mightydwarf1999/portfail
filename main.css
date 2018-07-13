@@ -4,6 +4,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -15,6 +16,34 @@ h1 {
 
 img, video {
   border-radius: 6px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to left, #0000ee 0%, #0000ee 50%, #0000ee 100%);
+  background-size: 200% auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: #0000ee;
+  transition-property: background;
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  display: inline-block;
+  background: linear-gradient(to left, #00dbde 0%, #fc00ff 50%, #00dbde 100%);
+  background-size: 200% auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: shine 1s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: -200% center; } 
 }
 
 #mainflex {
