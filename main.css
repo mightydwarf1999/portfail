@@ -27,7 +27,7 @@ a {
   border-color: #0000ee;
 }
 
-a:hover {
+a:hover .mailto{
   display: inline-block;
   color: #ffffff;
   background: linear-gradient(to left, #00dbde 0%, #fc00ff 50%, #00dbde 100%);
